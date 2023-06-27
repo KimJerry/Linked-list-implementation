@@ -155,6 +155,12 @@ class LinkedList {
             return;
         }
 
+        /* invalid position. */
+        if (pos >= size) {
+            cout << "position value should be less than size." << endl;
+            return;
+        }
+
         if (size == 1) {
             popFront();
             return;
